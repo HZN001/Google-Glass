@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <title>Teste JavaScript</title>
+    <meta charset="UTF-8">
+    <script>
+        
+        function acendeLampada(){
+           /* alert("Lampada Ascendeu"); */
+            document.getElementById("luz").src= "_imagens/lampada-acesa.jpg";
+            /* Do jeito que tá vai ficar acesso pra sempre, caso eu não recarregue*/
+
+        }
+        function apagaLampada(){
+            document.getElementById("luz").src="_imagens/lampada-apagada.jpg";
+        }
+
+        function quebraLampada(){
+            document.getElementById("luz").src="_imagens/lampada-quebrada.jpg";
+        }
+
+    </script>
+<!--Tudo dentro de () são parâmetros-->
+<!--Tudo dentro de {} são códigos -->
+</head>
+
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()">;
+
+</body>
+
+</html>
